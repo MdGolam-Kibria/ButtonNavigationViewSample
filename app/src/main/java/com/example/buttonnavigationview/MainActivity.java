@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private void repleaseFragment(Fragment fragment) {
         FragmentTransaction fm;
-        fm = getSupportFragmentManager().beginTransaction().add(R.id.fragment, fragment);
+        fm = getSupportFragmentManager().beginTransaction().replace(R.id.fragment, fragment);
         fm.commit();
     }
 }
